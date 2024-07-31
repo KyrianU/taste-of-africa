@@ -1,0 +1,1 @@
+web: gunicorn taste_of_africa.wsgi
