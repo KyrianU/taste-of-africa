@@ -8,3 +8,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.carousel-inner {
+    height: 600px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-header {
+    height: 300px;
+    margin-left: -65px;
+    border-radius: 4px;
+}
