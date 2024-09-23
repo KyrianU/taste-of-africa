@@ -31,6 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net']
+
 
 # Application definition
 
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'home',
+    'menu',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
