@@ -17,6 +17,7 @@ class Menu(models.Model):
     item = models.CharField(max_length=25, choices=MENU_ITEMS)
     name = models.CharField(max_length=50)
     description = models.TextField()
+    image = models.ImageField(null=True)
 
     def __str__(self):
         return str(self.name)

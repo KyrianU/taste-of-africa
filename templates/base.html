@@ -31,6 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'menu_list' %}">Menu</a></li>
 
+                    {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="">Make A Reservation</a></li>
 
                     <li class="nav-item dropdown">
@@ -39,11 +40,13 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarmenu">
                             <a class="dropdown-item" href="#">My Reservations</a>
-                            <a class="dropdown-item" href="#">Logout</a>
+                            <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                         </div>
                     </li>
-                    <li><a class="nav-link" href="#">My Register</a></li>
-                    <li><a class="nav-link" href="#">Login</a></li>
+                    {% else %}
+                    <li><a class="nav-link" href="{% url 'account_signup' %}">My Register</a></li>
+                    <li><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
