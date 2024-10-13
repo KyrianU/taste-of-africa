@@ -1,0 +1,71 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+
+
+<section class="container-fluid">
+    <div class="row text-center">
+        <h1 class="mt-4 p4"><strong>Menu</strong></h1>
+        <hr>
+    </div>
+    <div class="row text-center">
+
+        <div class="row-starters">
+            <h2><strong><i>Starters</i></strong></h2>
+            <hr>
+
+            <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
+                {% for food in object_list %} 
+                {% if food.item == 'Starters' %}
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                    <img src="{% static 'media/grilled-fish.jpg'%}" class="img-starters" alt="Grilled fish">
+                    <div class="card-title">{{ food.name }}</div>
+                    <div class="card-body">
+                        <p class="card-text">{{ food.description }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="row-mains">
+            <h2><strong><i>Mains</i></strong></h2>
+            <hr>
+
+            <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
+                {% for food in object_list %} 
+                {% if food.item == 'Mains' %}
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                    <img src="{% static 'media/plantain.jpg' %}" class="img-starters" alt="plantain">
+                    <div class="card-title">{{ food.name }}</div>
+                    <div class="card-body">
+                        <p class="card-text">{{ food.description }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="row-desserts">
+            <h2><strong><i>Desserts</i></strong></h2>
+            <hr>
+
+            <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
+                {% for food in object_list %} 
+                {% if food.item == 'Desserts' %}
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                    <img src="{% static 'media/chicken-wings.jpg' %}" class="img-starters" alt="chicken wings">
+                    <div class="card-title">{{ food.name }}</div>
+                    <div class="card-body">
+                        <p class="card-text">{{ food.description }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
