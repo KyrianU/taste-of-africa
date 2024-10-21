@@ -18,7 +18,13 @@
                 {% for food in object_list %} 
                 {% if food.item == 'Starters' %}
                 <div class="card text-white bg-dark mb-3" style="width: 22rem;">
-                    
+                    <div class="image-container">
+                        {% if "placeholder" in food.featured_image.url %}
+                        
+                        {% else %}
+                        <img class="card-img-top" src=" {{ food.featured_image.url }}" alt="">
+                        {% endif %}
+                    </div>
                     <div class="card-title">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
@@ -37,7 +43,12 @@
                 {% for food in object_list %} 
                 {% if food.item == 'Mains' %}
                 <div class="card text-white bg-dark mb-3" style="width: 22rem;">
-                    
+                    <div class="image-container">
+                        {% if "placeholder" in food.featured_image.url %}
+                        {% else %}
+                        <img class="card-img-top" src=" {{ food.featured_image.url }}" alt="">
+                        {% endif %}
+                    </div>
                     <div class="card-title">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
@@ -55,8 +66,13 @@
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
                 {% if food.item == 'Desserts' %}
-                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
-                    
+                <div class="card" style="width: 22rem;">
+                    <div class="image-container">
+                        {% if "placeholder" in food.featured_image.url %}
+                        {% else %}
+                        <img class="card-img-top" src=" {{ food.featured_image.url }}" alt="">
+                        {% endif %}
+                    </div>
                     <div class="card-title">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
