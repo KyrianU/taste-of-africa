@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 text-center">
+            <h2 class="mt-2 mb-3">My Reservations</h2>
+            <p class="mt-2">Showing Reservations for: <strong>{{ request.user.username }}</strong></p>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-5">
+        <div class="col-sm-12">
+            <div class="row d-flex justify-content-center">
+                {% for reservation in reservation %}
+                <div class="col-md-6 col-lg-4">
+                    <ul class="reservation-list text-center" id="{{ reservation.booking_id }}">
+                        <li class="reservation-item">
+                            <h4>Reservation ID: {{ reservation.booking_id }}</h4>
+
+                            <li class="reservation-item">Table Seats: {{ reservation.seats }} </li>
+                            <li class="reservation-item">Time: {{ reservation.time }}</li>
+                            <li class="reservation-item">Date: <span class="reservation-date"
+                                id="{{ reservation.date_booked }}">{{ reservation.date }}</span>
+                            </li>
+                        </li>
+
+                        <div class="text-center">
+                            <a href="{{% reservation.booking_id %}}"
+                                class="btn btn-warning">Edit Reservations</a>
+                            <a href="{{% reservation.booking_id %}}"
+                                class="btn btn-danger">Cancel Reservations</a>
+                        </div>
+                    </ul>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
