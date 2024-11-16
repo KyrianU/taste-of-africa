@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-from datetime import datetime
+import datetime
 from django.db.models import AutoField, IntegerField
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
@@ -28,6 +28,8 @@ class Reservation(models.Model):
     def validate_date(date):
         if date < datetime.date.today():
             raise ValidationError("The date cannot be in the past")
+        return date
+        
 
     seats = models.IntegerField(
         null=False,
@@ -46,7 +48,7 @@ class Reservation(models.Model):
         null=True, blank=True, default=None, validators=[validate_date])
     time = models.CharField(
         max_length=20, choices=time_slots, default="12:30")
-    date_booked = models.DateField(default=datetime.now, blank=True)
+    date_booked = models.DateField(default=datetime.datetime.now(), blank=True)
 
     def __str__(self):
-        return self(self.booking_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        return str(self.booking_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

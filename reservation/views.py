@@ -16,7 +16,7 @@ class ReservationFormView(FormView):
     successful_url = '/reservation/manage_reservations'
 
     def form_valid(self, form):
-        form = form.save(commit=false)
+        form = form.save(commit=False)
         user = User.objects.get(username=self.request.user.username)
         form.user = user
 
