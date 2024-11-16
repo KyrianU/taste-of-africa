@@ -11,9 +11,9 @@ from django.views.generic.edit import FormView
 
 
 class ReservationFormView(FormView):
-    template_name = ''
+    template_name = 'reservation.html'
     form_class = ReservationForm
-    successful_url = ''
+    successful_url = '/reservation/manage_reservations'
 
     def form_valid(self, form):
         form = form.save(commit=false)
@@ -27,14 +27,14 @@ class ReservationFormView(FormView):
 class ReservationRequestView(CreateView):
     model = Reservation
     form_class = ReservationForm
-    template_name = ''
-    reservation_confirmation = ''
-    reservation_message = ''
+    template_name = 'reservation.html'
+    reservation_confirmation = '/manage_reservations'
+    reservation_message = 'Booking Confirmed'
 
 
 class ManageReservation(ListView):
     model = Reservation
-    template_name = ''
+    template_name = 'manage_reservations.html'
 
     def get_queryset(self, **kwargs):
         qs = super().get_queryset(**kwargs)
@@ -44,12 +44,12 @@ class ManageReservation(ListView):
 class EditReservation(SuccessMessageMixin, ListView):
     model = Reservation 
     form_class = ReservationForm
-    template_name = ''
-    success_url = reverse_lazy('')
+    template_name = 'edit_reservation.html'
+    success_url = reverse_lazy('manage_reservation')
     reservation_message = 'Reservation Updated!'
 
 
 class DeleteReservation(SuccessMessageMixin, DeleteView):
     model = Reservation
-    template_name = ''
-    success_url = reverse_lazy('')
+    template_name = 'delete_reservation.html'
+    success_url = reverse_lazy('manage_reservations')
