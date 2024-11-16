@@ -8,7 +8,7 @@ from django.core.exceptions import ValidationError
 class ReservationForm(forms.ModelForm):
 
     class Meta:
-        model = Resevation
+        model = Reservation
         fields = ('name', 'seats', 'date', 'time')
         widgets = {
             'date': forms.DateInput(

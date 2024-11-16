@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from .forms import ReservationForm
 from .models import Reservation
-from django.contrib.auth.models import user 
+from django.contrib.auth.models import User 
 from django.views.generic import ListView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import UpdateView, CreateView, DeleteView

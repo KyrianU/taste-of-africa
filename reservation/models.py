@@ -29,24 +29,24 @@ class Reservation(models.Model):
         if date < datetime.date.today():
             raise ValidationError("The date cannot be in the past")
 
-            seats = models.IntegerField(
-                null=False,
-                blank=False,
-                default=1,
-                validators=[
-                    MinValueValidator(1),
-                    MaxValueValidator(6),
-                ]
-            )
-            booking_id = models.AutoField(primary_key=True)
-            user = models.ForeignKey(
-                User, on_delete=models.CASCADE, null=True, blank=True)
-            name = models.CharField(max_length=20, null=True)
-            date = models.DateField(
-                null=True, blank=True, default=None, validators=[validate_date])
-            time = models.CharField(
-                max_length=20, choices=time_slots, default="12:30")
-            date_booked = models.DateField(default=datetime.now, blank=True)
+    seats = models.IntegerField(
+        null=False,
+        blank=False,
+        default=1,
+        validators=[
+            MinValueValidator(1),
+            MaxValueValidator(6),
+        ]
+    )
+    booking_id = models.AutoField(primary_key=True)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=20, null=True)
+    date = models.DateField(
+        null=True, blank=True, default=None, validators=[validate_date])
+    time = models.CharField(
+        max_length=20, choices=time_slots, default="12:30")
+    date_booked = models.DateField(default=datetime.now, blank=True)
 
-            def __str__(self):
-                return self(self.booking_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    def __str__(self):
+        return self(self.booking_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

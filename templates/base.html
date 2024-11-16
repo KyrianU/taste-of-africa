@@ -32,14 +32,14 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'menu_list' %}">Menu</a></li>
 
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="">Make A Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'reservation' %}">Make A Reservation</a></li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navDropdownbar" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                          aria-label="My Account">My Account
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarmenu">
-                            <a class="dropdown-item" href="#">My Reservations</a>
+                            <a class="dropdown-item" href="{% url 'manage_reservations' %}">My Reservations</a>
                             <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                         </div>
                     </li>
