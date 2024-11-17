@@ -13,11 +13,11 @@
     <div class="row d-flex justify-content-center mb-5">
         <div class="col-sm-12">
             <div class="row d-flex justify-content-center">
-                {% for reservation in reservation %}
+                {% for reservation in object_list %}
                 <div class="col-md-6 col-lg-4">
                     <ul class="reservation-list text-center" id="{{ reservation.booking_id }}">
                         <li class="reservation-item">
-                            <h4>Reservation ID: {{ reservation.booking_id }}</h4>
+                            <h4>Reservation ID: {{ reservation.id }}</h4>
 
                             <li class="reservation-item">Table Seats: {{ reservation.seats }} </li>
                             <li class="reservation-item">Time: {{ reservation.time }}</li>

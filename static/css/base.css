@@ -40,6 +40,11 @@ footer {
  
 }
 
+.reservation-item,
+.reservation-date {
+    list-style: none;
+}
+
 
 .card-img-top {
     border-top-left-radius: 15px;
