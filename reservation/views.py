@@ -13,7 +13,7 @@ from django.views.generic.edit import FormView
 class ReservationFormView(FormView):
     template_name = 'reservation.html'
     form_class = ReservationForm
-    successful_url = '/reservation/manage_reservations'
+    success_url = '/reservation/manage_reservations'
 
     def form_valid(self, form):
         form = form.save(commit=False)
@@ -30,6 +30,7 @@ class ReservationRequestView(CreateView):
     template_name = 'reservation.html'
     reservation_confirmation = '/manage_reservations'
     reservation_message = 'Booking Confirmed'
+    success_url = reverse_lazy('manage_reservations')
 
 
 class ManageReservation(ListView):
