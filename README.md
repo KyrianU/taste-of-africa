@@ -19,4 +19,21 @@ Taste of Africa is a restaurant website designed based to display the user their
  8. As a user, I want to be able to log in and cancel my booking when necessary
  9. As a user, I want to be aware of the opening time for when I want to make a reservations
  10. As a user, I want to be able to log in and see all my reservations
- 11. As the site owner, I want to be able to access the admin panel and be able to update the menu list
+ 11. As the site owner, I want to be able to access the admin panel and be able to update the menu list.
+
+ # Structure 
+
+ ## Wireframes
+
+ ![wireframes](static/screenshots/wireframes1.png)
+ ![wireframes](static/screenshots/wireframes2.png)
+ ![wireframes](static/screenshots/wireframes3.png)
+ ![wireframes](static/screenshots/wireframes4.png)
+ ![wireframes](static/screenshots/wireframes5.png)
+ ![wireframes](static/screenshots/wireframes6.png)
+ ![wireframes](static/screenshots/wireframes7.png)
+ ![wireframes](static/screenshots/wireframes8.png)
+ ![wireframes](static/screenshots/wireframes9.png)
+ ![wireframes](static/screenshots/wireframes10.png)
+
+
