@@ -51,4 +51,4 @@ class Reservation(models.Model):
     date_booked = models.DateField(default=datetime.datetime.now(), blank=True)
 
     def __str__(self):
-        return str(self.booking_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        return str(self.id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

@@ -37,9 +37,6 @@ class ManageReservation(ListView):
     model = Reservation
     template_name = 'manage_reservations.html'
 
-    def get_queryset(self, **kwargs):
-        qs = super().get_queryset(**kwargs)
-        return qs,filter(user=self.request.user)
 
     
 class EditReservation(SuccessMessageMixin, ListView):
