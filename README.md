@@ -46,4 +46,10 @@ Taste of Africa is a restaurant website designed based to display the user their
 
  if the user is authenticated, the dropdown will appear under "My account" where my reservation and logout will appear. From there the user can manage their reservations(either delete or ammend)
 
+ ## Carousel Images 
+
+ ![carousel](static/screenshots/carousel1.png)
+ ![carousel](static/screenshots/carousel2.png)
+ ![carousel](static/screenshots/carousel3.png)
+
 
