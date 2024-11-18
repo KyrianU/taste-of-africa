@@ -23,6 +23,10 @@ nav {
     margin-right: auto;
 }
 
+h1, h2, h3 {
+    color: #561217;
+}
+
 .img-header {
     height: 300px;
     margin-left: -65px;
