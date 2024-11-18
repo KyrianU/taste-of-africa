@@ -40,7 +40,8 @@ footer {
     padding-top: 2em;
     display: flex;
     flex-flow: row wrap;
-    color: #561217
+    color: #561217;
+    bottom: 0;
  
 }
 
