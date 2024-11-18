@@ -36,4 +36,14 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![wireframes](static/screenshots/wireframes9.png)
  ![wireframes](static/screenshots/wireframes10.png)
 
+ #  Features
+
+ ## Color Theme
+
+ ![color theme](static/screenshots/colortheme.png)
+
+ On the homepage, the navigation has all the links to the active pages for the user which are clearly labelled. The user has the ability to have a look at the menu via the navigation bar. The user can also have a look at the menu by clicking on the card underneath the carousel. The same can also be done by clicking "Book", if the user decided to make a reservation.
+
+ if the user is authenticated, the dropdown will appear under "My account" where my reservation and logout will appear. From there the user can manage their reservations(either delete or ammend)
+
 
