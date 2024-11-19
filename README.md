@@ -67,13 +67,25 @@ Taste of Africa is a restaurant website designed based to display the user their
 
  ![Footer](static/screenshots/footer1.png)
 
- ##  Navbar 
+ ## Navbar 
 
  ![Navbar](static/screenshots/navbar1.png)
   - the navbar when the user has not logged in/registered
 
  ![Navbar](static/screenshots/navbar.png)
   - The navbar when the user has logged in/registered
+
+## Login 
+
+![Login](static/screenshots/login1.png)
+
+## Sign UP
+
+![Signup](static/screenshots/signup1.png)
+
+## Request Reservation
+
+![Reservation](static/screenshots/request-res.png)
 
 ### Features to implement in the future
 
@@ -108,7 +120,32 @@ In order to make my project work, I have used several technologies along the way
   - To store images used on the project
 
 
+## Deployment 
 
+### Heroku
+
+The website was deployed using ![Heroku](https://id.heroku.com/login)
+
+the steps for the deployment are listed below:
+
+- Login/SignUp to Heroku
+- Once signed in, from the dashboard click "New" then click "Create New App"
+- You will have to enter a unique name for your projects. Once chose, select the region
+then press "Create New App"
+- Set up your Environment variables - a very vital step to ensure your application is deployed
+properly
+- Go to "Reveal config vars" and set the following:
+  - SECRET_KEY - to be set to your chosen key
+  - CLOUDINARY_URL - To bet set to your Cloudinary api 
+- Heroku Postgres must be installed 
+
+In the deploy tab 
+
+- Click on the deploy tab and then choose "Github-Connect to Github"
+- Enter the Github repository then click search 
+- choose the appropriate repository for your application. Once done, click on "Connect"
+- You will then have two options(automatic or manual deployment), the automatic deployment will generate a new application everytime a change has been pushed to github, whereas the manual deployment requires the user to "Deploy Branch" button whenever the user wants to make a change.
+- Once the method of deployemnt has been selected, click on "Deploy Branch", your application shoould then be built. To then see it, click view
 
 
 # Credits
