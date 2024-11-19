@@ -73,6 +73,13 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![Navbar](static/screenshots/navbar.png)
   - The navbar when the user has logged in/registered
 
+### Features to implement in the future
+
+- Introduce vegan or vegetarian menu
+- Information about allergies
+- Food prices
+- Drinks menu
+
 ## Technologies Used 
 
 In order to make my project work, I have used several technologies along the way 
