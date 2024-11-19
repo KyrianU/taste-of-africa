@@ -36,6 +36,9 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![wireframes](static/screenshots/wireframes9.png)
  ![wireframes](static/screenshots/wireframes10.png)
 
+ ## Database
+ ![Database](static/screenshots/database1.png)
+
  #  Features
 
  ## Color Theme
