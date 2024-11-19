@@ -52,6 +52,34 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![carousel](static/screenshots/carousel2.png)
  ![carousel](static/screenshots/carousel3.png)
 
+## Technologies Used 
+
+In order to make my project work, I have used several technologies along the way 
+
+- [Font Awesome](https://fontawesome.com/)
+  - Font awesome used for the social account on the footer 
+
+- [wireframes](https://balsamiq.cloud/sgufrs/pumdhj9/r0813)
+  - for the wireframes content of the site 
+
+- [Gitpod](https://www.gitpod.io/)
+
+- [GitHub](https://github.com/)
+
+- [Scheme Colors](https://www.schemecolor.com/)
+  - for the color theme used on the site 
+
+- [Heroku](https://heroku.com/)
+
+- [Django](https://www.djangoproject.com/)
+  - The framework that was used to build the overall project 
+
+- [Cloudinary](https://cloudinary.com/)
+  - To store images used on the project
+
+
+
+
 
 # Credits
 
