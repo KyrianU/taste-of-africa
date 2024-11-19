@@ -53,3 +53,36 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![carousel](static/screenshots/carousel3.png)
 
 
+# Credits
+
+throughout the whole process of building this website, I have used a number of different sources that have helped me solve a number of issues/bugs that I have come across along the way. Furthermore, I have taken some inspirations on building the websites functionality and looks from the sources below
+
+- The carousel element can be found from the following links below 
+  - [Bootstrap](https://getbootstrap.com/docs/5.3/components/carousel/)
+
+- the Nav bar 
+  - [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/)
+
+- The idea behind how the menu app was designed was inspired from the below 
+  - [Card](https://getbootstrap.com/docs/5.3/components/card/)
+
+- Unsplash & pexels for the images used across the site 
+  - [Pexels](https://www.pexels.com/)
+  - [Unsplash](https://unsplash.com/)
+
+- Query set to filter through the reservation view 
+  - (https://docs.djangoproject.com/en/5.1/topics/class-based-views/generic-display/#viewing-subsets-of-objects)
+
+- Reservation model was inspired by the link below 
+  - (https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+
+- For my reservation model, form & views, I used the below stackoverflow links to help overcome any issues 
+  - (https://stackoverflow.com/questions/61076688/django-form-dateinput-with-widget-in-update-loosing-the-initial-value)
+  - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
+  - (https://stackoverflow.com/questions/50439356/django-date-validation-help-needed)
+  - (https://stackoverflow.com/questions/48872380/display-multiple-queryset-in-list-view)
+
+- The crispy form template was downaloded with the help of the link below 
+  - (https://stackoverflow.com/questions/75706202/attributeerror-settings-object-has-no-attribute-crispy-template-pack)
+
+
