@@ -41,6 +41,10 @@ class ManageReservation(ListView):
         queryset = super().get_queryset()
         queryset.filter(user=self.request.user)
         context_object_name = "object_list"
+        
+        return queryset
+
+        
 
 
 

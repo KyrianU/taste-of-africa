@@ -87,6 +87,10 @@ Taste of Africa is a restaurant website designed based to display the user their
 
 ![Reservation](static/screenshots/request-res.png)
 
+## My reservation
+
+![My reservations](static/screenshots/my-reservation.png) 
+
 ### Features to implement in the future
 
 - Introduce vegan or vegetarian menu
