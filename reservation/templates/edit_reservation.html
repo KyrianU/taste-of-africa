@@ -13,10 +13,10 @@
     <div class="row d-flex justify-content-center">
         <div class="col-sm-4">
             <h4 class="text-center my-3">Reservation ID: {{ reservation.id }}</h4>
-            <form method="post" class="full-form">
+            <form method="POST" class="form group">
 
                 {% csrf_token %}
-                {{ form | crispy }}
+                {{ form|crispy }}
 
                 <button type="submit" value="post" class="btn btn-warning mb-4">
                     Edit Reservation</button>
