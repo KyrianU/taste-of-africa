@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 {% load crispy_forms_tags %}
-
+<!--Edit Reservation form-->
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8">
@@ -12,7 +12,7 @@
 
     <div class="row d-flex justify-content-center">
         <div class="col-sm-4">
-            <h4 class="text-center my-3">Reservation ID: {{ reservation.id }}</h4>
+            <h4 class="text-center my-3">Reservation : {{ reservation.id }}</h4>
             <form method="POST" class="form group">
 
                 {% csrf_token %}

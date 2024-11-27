@@ -36,24 +36,19 @@ class ReservationRequestView(CreateView):
 class ManageReservation(ListView):
     model = Reservation
     template_name = 'manage_reservations.html'
+    context_object_name = "object_list"
 
     def get_queryset(self):
-        queryset = super().get_queryset()
-        queryset.filter(user=self.request.user)
-        context_object_name = "object_list"
-        
-        return queryset
+         
+        return super().get_queryset().filter(user=self.request.user)
 
         
-
-
-
     
-class EditReservation(SuccessMessageMixin, ListView):
+class EditReservation(SuccessMessageMixin, UpdateView):
     model = Reservation 
     form_class = ReservationForm
     template_name = 'edit_reservation.html'
-    success_url = reverse_lazy('manage_reservation')
+    success_url = reverse_lazy('manage_reservations')
     reservation_message = 'Reservation Updated!'
 
 
