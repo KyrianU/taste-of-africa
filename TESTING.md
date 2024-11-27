@@ -1,5 +1,7 @@
 # Testing 
 
+Please click the link ahead to return to readme file [README](README.md)
+
 ## User stories 
 
 ### As a user, I am able to nagivate through the website and view desired content with minimal issues
@@ -12,7 +14,7 @@
 
 ### As the admin, I am able to login to the admin page so I can access the site's back end
 
-  - 
+  -![Admin panel](static/screenshots/admin-panel.png)
 
 ### As the site admin, I can display the restaurant menu options so that the user knows what is on offer
 
@@ -38,5 +40,24 @@
  ### As a user, I want to be able to log in and cancel my booking when necessary
 
   - ![Cancel reservation](static/screenshots/Cancelreservation.png)
+
+### As a user, I want to be aware of the opening time for when I want to make a reservations 
+
+ - On the footer, you can find the location of the restaurant as well as the opening time
+  ![Footer](static/screenshots/footer1.png)
+  
+  - On the reservation page, at the bottom of the form there Is a time drop that allows the user to pick which time suits them best. The first time slot being 12.30pm to the last one being 21:30pm
+  ![Time slot](static/screenshots/time-slot.png)
+
+### As a user, I want to be able to log in and see all my reservations
+
+ - ![Reservation](static/screenshots/my-reservation.png)
+
+
+### As the site owner, I want to be able to access the admin panel and be able to update the menu list
+
+- ![Menu panel](static/screenshots/menu-admin.png)
+- As a user, I can access the menu admin panel with no issues. Furthermore, there is add menu button on the top right of the page for when there is a change/update on the menu.
+- ![Add menu](static/screenshots/add-menu.png)
 
 
