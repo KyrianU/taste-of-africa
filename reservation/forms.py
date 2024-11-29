@@ -4,7 +4,6 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 
 
-
 class ReservationForm(forms.ModelForm):
 
     class Meta:
@@ -21,8 +20,8 @@ class ReservationForm(forms.ModelForm):
 
 
 class EditReservations(forms.ModelForm):
-    
-    # compare user input agaisnt current date ans throws an error 
+
+    # compare user input agaisnt current date ans throws an error
     # if data happens to be in the past
 
     def clean_date(self):
@@ -38,7 +37,7 @@ class EditReservations(forms.ModelForm):
                 'date': forms.DateInput(
                     format=('%Y-%m-%d'),
                     attrs={'class': 'form-control',
-                        'placeholder': 'Select a date',
-                        'type': 'date'}
+                           'placeholder': 'Select a date',
+                           'type': 'date'}
                 ),
             }

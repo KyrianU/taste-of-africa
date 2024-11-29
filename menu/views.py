@@ -5,6 +5,7 @@ from django.views.generic import ListView
 # Create your views here.
 from .models import Menu
 
+
 class MenuListView(ListView):
     """
     food menu as a list of items from the database

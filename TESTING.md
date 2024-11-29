@@ -61,3 +61,38 @@ Please click the link ahead to return to readme file [README](README.md)
 - ![Add menu](static/screenshots/add-menu.png)
 
 
+# Code Validation 
+
+## HTML 
+
+- While testing my html files, I came across a couple of minor issues that were resolved to the best of my knowledge 
+
+![HTML](static/screenshots/HTML.png)
+
+## CSS 
+
+- No issues came up while testing my CSS code
+
+![CSS](static/screenshots/CSS.png)
+
+## Pyhton Validator 
+
+- Menu models.py
+
+![menu models](static/screenshots/menu-models.png)
+
+- Menu views.py 
+
+![menu views](static/screenshots/menu-views.png)
+
+- Reservation forms.py
+
+![reservation forms](static/screenshots/reservation-forms.png)
+
+- Reservation models.py 
+
+![reservation models](static/screenshots/reservation-models.png)
+
+- Reservation views.py 
+
+![reservation views](static/screenshots/RESERVATION-VIEWS.PNG)

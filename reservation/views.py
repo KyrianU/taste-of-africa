@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from .forms import ReservationForm
 from .models import Reservation
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import User
 from django.views.generic import ListView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import UpdateView, CreateView, DeleteView
@@ -39,13 +39,12 @@ class ManageReservation(ListView):
     context_object_name = "object_list"
 
     def get_queryset(self):
-         
+
         return super().get_queryset().filter(user=self.request.user)
 
-        
-    
+
 class EditReservation(SuccessMessageMixin, UpdateView):
-    model = Reservation 
+    model = Reservation
     form_class = ReservationForm
     template_name = 'edit_reservation.html'
     success_url = reverse_lazy('manage_reservations')

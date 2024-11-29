@@ -29,7 +29,6 @@ class Reservation(models.Model):
         if date < datetime.date.today():
             raise ValidationError("The date cannot be in the past")
         return date
-        
 
     seats = models.IntegerField(
         null=False,
@@ -40,7 +39,7 @@ class Reservation(models.Model):
             MaxValueValidator(6),
         ]
     )
-    
+
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=20, null=True)
@@ -51,4 +50,5 @@ class Reservation(models.Model):
     date_booked = models.DateField(default=datetime.datetime.now(), blank=True)
 
     def __str__(self):
-        return str(self.id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        return str(self.id)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
