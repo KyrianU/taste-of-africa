@@ -96,3 +96,15 @@ Please click the link ahead to return to readme file [README](README.md)
 - Reservation views.py 
 
 ![reservation views](static/screenshots/RESERVATION-VIEWS.PNG)
+
+# Bugs
+
+## Fixed bugs
+
+- Users were able to view and edit reservation made by other users
+- Fixed an issue that allowed to book a reservation for a past date
+
+## Unfixed bugs
+
+- Seats option allows the user to pick a number that is less than zero
+- Users are also able to book duplicate reservation for the same date and time
