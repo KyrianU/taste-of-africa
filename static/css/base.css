@@ -61,29 +61,16 @@ footer {
 
 @media screen and (max-width: 820px){
     .carousel-inner {
-        width: 550px;
+        height: 250px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .img-header {
-        width: 350px;
-        margin-left: 10px;
-        margin-right: auto;
-
     }
 }
 
 @media screen and (max-width: 390px){
     .carousel-inner {
-        width: 350px;
+        height: 250px;
         margin-left: auto;
-        margin-right: auto;
-    }
-
-    .img-header {
-        width: 350px;
-        margin-left: 10px;
         margin-right: auto;
     }
        

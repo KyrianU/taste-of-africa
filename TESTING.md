@@ -61,6 +61,14 @@ Please click the link ahead to return to readme file [README](README.md)
 - ![Add menu](static/screenshots/add-menu.png)
 
 
+# Broweser Responsivness 
+
+- Safari 
+![Safari](static/screenshots/Screenshot%202024-11-29%20at%2011.13.17.png)
+
+- Chrome
+![Chrome](static/screenshots/Chrome.png)
+
 # Code Validation 
 
 ## HTML 
