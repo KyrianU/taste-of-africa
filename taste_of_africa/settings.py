@@ -30,7 +30,7 @@ SECRET_KEY = 'ouc+50+q)offejp)n#arodbr-l)*%a2mxkd^9odto_ct&5@2e8'
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net', 'localhost',
-                'taste-of-africa-e622c7aa7e3a.herokuapp.com']
+                'taste-of-africa-e622c7aa7e3a.herokuapp.com', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net']
 
