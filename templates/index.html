@@ -49,8 +49,9 @@
             <div class="about-section mt-5">
                 <h2 class="text-center">About Us</h2>
                 <h3 class="text-center">Welcome to Taste of Africa</h3>
+                <hr>
                 <p class="text-center mb-3">At <strong>Taste of Africa,</strong> we believe great food brings
-                   people together. Our passion for fresh ingredients, bold flavors, and warm hospitaliy creates
+                   people together. Our passion for fresh ingredients, bold flavors, and warm hospitality creates
                    a dining experience that feels like home. Whether you're here for a casual meal or a celebration
                    meal, we're dedicated to serving up delicious dishes and unforgettable moments</p>
             </div>
@@ -65,7 +66,7 @@
             <div class="card">
                 <img src="{% static 'media/menu.jpg' %}" alt="">
                 <div class="card-body">
-                    <a href="#" class="btn btn-dark">Menu</a>
+                    <a href="{% url 'menu_list' %}" class="btn btn-outline-success">Menu</a>
                 </div>
             </div>
         </div>
@@ -73,7 +74,7 @@
             <div class="card">
                 <img src="{% static 'media/booking.jpg' %}" alt="">
                 <div class="card-body">
-                    <a href="#" class="btn btn-dark">Book</a>
+                    <a href="{% url 'account_signup' %}" class="btn btn-outline-success">Book</a>
                 </div>
             </div>
         </div>
