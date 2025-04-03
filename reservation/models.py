@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 import datetime
-from django.db.models import AutoField, IntegerField
+from django.db.models import IntegerField
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
@@ -51,4 +51,4 @@ class Reservation(models.Model):
 
     def __str__(self):
         return str(self.id)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                     

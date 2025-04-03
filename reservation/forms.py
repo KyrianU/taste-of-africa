@@ -1,6 +1,6 @@
 from .models import Reservation
 from django import forms
-from django.conf import settings
+import datetime
 from django.core.exceptions import ValidationError
 
 
@@ -27,11 +27,11 @@ class EditReservations(forms.ModelForm):
     def clean_date(self):
         date = self.cleaned_data('date')
         if date < datetime.date.now():
-            raise forms.ValidationError('the date cannot be in the past')
-        return data
+            raise ValidationError('the date cannot be in the past')
+        return date
 
         class Meta:
-            model = Resevation
+            model = Reservation
             fields = ('name', 'seats', 'date', 'time')
             widgets = {
                 'date': forms.DateInput(
