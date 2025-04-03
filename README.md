@@ -65,6 +65,13 @@ Taste of Africa is a restaurant website designed based to display the user their
 
  ## Footer
 
+ Featured on all pages, the footer is essential for the user/customer as it encourages them to get In touch with the restaurant either by email or telephone. Alternatively, they could also keep connected via social media with the links provided. The footer includes:
+
+  * All social media links have a pointer cursor
+  * Social media links open in an another tab so that users are not directed away from the website
+  * The business address, phone number and email address are dipayed on the footer
+  * The opening time are also displayed on the footer
+
  ![Footer](static/screenshots/footer1.png)
 
  ## Navbar 
