@@ -59,6 +59,11 @@ Taste of Africa is a restaurant website designed based to display the user their
 
  ## Menu 
 
+ The menu page is reachable via the Menu Link on the nav bar or by the responsive menu link just above the footer. It includes:
+
+  * Well categorised menu, clear divide betweent the Starter, Main and Dessert menu. Makes for a more enhanced customer experience
+  * The background and text are well styled for an enhanced visual experience
+
  ![Menu](static/screenshots/menu1.png)
  ![Menu](static/screenshots/menu2.png)
  ![Menu](static/screenshots/menu3.png)
