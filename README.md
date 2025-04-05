@@ -101,6 +101,21 @@ A successful login message will then show up on the navbar.
 
 ## Sign UP
 
+The website has the functionality for a user to register for an account.
+
+ * The registration form can be accessed through the nav bar or when the user click on the sign up link on the login page
+
+ * At the top of the sign up page, there is a link to login page if the user already has an account with us.
+
+ * It uses django-allauth to provide all the settings for user authentication and includes the fields below. 
+
+   * Username (unique)
+   * Email (optional)
+   * Password
+   * Password repeat
+
+The form is submitted via the Signup button at the bottom of the form. When the user click on the SignUp button they are redirected to the home page. On the navbar, you will see logout replacing login and sign up links
+
 ![Signup](static/screenshots/signup1.png)
 
 ## Request Reservation
