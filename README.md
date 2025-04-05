@@ -87,7 +87,15 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![Navbar](static/screenshots/navbar.png)
   - The navbar when the user has logged in/registered
 
-## Login 
+## Login
+
+A registered user is able to access the login page either via the navigation bar or via the book button button just above the footer. The Login page is simple enough for the users to follow and login to make a reservation but also has a clear message for those who have not yet signed up.
+
+The login page is styled in a constent manner with the rest of the website. The form is then submitted via the sign in bottom at the bottom of the form. 
+
+When the user clicks Sign in, they are then redirected to the home page.
+
+A successful login message will then show up on the navbar.
 
 ![Login](static/screenshots/login1.png)
 
