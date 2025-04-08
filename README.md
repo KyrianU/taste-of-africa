@@ -99,6 +99,14 @@ A successful login message will then show up on the navbar.
 
 ![Login](static/screenshots/login1.png)
 
+## Logout
+
+The website gives a registered used the functionality to logout of the website
+
+  * The logout page can only be accessed from the navigation bar and only when the user is logged in 
+  * The user will receive a confirmation that they would like to log out 
+  * The sign out button logs the user out directs back to the homepage 
+
 ## Sign UP
 
 The website has the functionality for a user to register for an account.
@@ -131,12 +139,33 @@ The website give functionality to the user to book/reserve a table via the make 
 - If the information passes the validation, the submit button directs the user back to the manage reservation page, where the user can view their existing bookings.
 - Each bookings will have the corresponding edit/cancel reservation button for the user to manipulate their bookings.
 
-
 ![Reservation](static/screenshots/request-res.png)
 
 ## My reservation
 
+The site gives the user the functionality to keep track of their bookings via the manage reservation link. The user can only access this page once they're logged in, or once they've made a reservation.
+
+ - When the user goes on the manage reservation link, they will only see bookings made from this particular user will be displayed 
+ - Each reservation will include the following:
+     * The name
+     * Number of guest
+     * Date of the reservation
+     * Time of reservation
+     * Booking ID
+     * Edit/Cancel button at the bottom of the booking
+
+-  The information on the reservation page can change subject to the customer chooisng to either update the booking or cancelling the booking entirely.
+
 ![My reservations](static/screenshots/my-reservation.png) 
+
+## Admin Panel 
+
+The site offers the restaurant owner the ability to view and interact with the database in the Django admin panel.
+
+  * You can access the admin panel by simply typing /admin/ at the end of the URL in the URL bar
+  * This will then bring the user to the Django Admin Panel Login Page, where the user will be     prompted to input their Username and Password. Only the superuser has permission to login.
+  * The Superuser has the permission to add, amend and delete and view everything.
+  
 
 ### Features to implement in the future
 
