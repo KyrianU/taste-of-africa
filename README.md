@@ -4,10 +4,23 @@
 
 ## Introduction
 
-Taste of Africa is a restaurant website designed based to display the user their menu & enable the user to make/ammend/edit their reservations. This project is stritcly for educational purposes.
+Taste of Africa is a restaurant website designed based to display the user their menu & enable the user to make/ammend/edit their reservations. This project is stritcly for educational purposes. With the use of Bootstrap and Django Framework, it gives users the functionality to register and account and reserve a table in advance. It includes full CRUD functionality on reservations.
 
+# Agile Methodology
 
-# UX
+The plan for this project was carried out using Agile Methodology. The Github issues which can be viewed here..., were also used to record the User stories used to help build the site.
+
+Every User story contains Acceptance Criteria and Tasks, some of these had to be amended as I was not too sure what needed to be done to achieve the Acceptance criteria.
+
+The MOSCOW METHOD OF PRIORITISATION was also used, classfifying each User Story as either 'Must Have', 'Should Have', or 'Could Have'. 
+
+Overall, the use of Agile methodology was of great benefits as it helped with organising the development of the project. Even though there was not timeframe set for each User Story, it helped with my time management.
+
+# User Experience (UX)
+
+## Site Goals
+
+Taste of Africa is a restaurant that aims to satisfy new and existing customers by maintaining an update and user friendly website with simple online menu, a reservation system and contact information with opening times. There's a short story about what the restaurant is also about.
 
 ## User Stories
 
@@ -27,6 +40,8 @@ Taste of Africa is a restaurant website designed based to display the user their
 
  ## Wireframes
 
+ Please note that the actual website may differ slightly from the original wireframes screeenshots. I used Balsamiq for the wireframes to give a closer indication of the design. 
+
  ![wireframes](static/screenshots/wireframes1.png)
  ![wireframes](static/screenshots/wireframes2.png)
  ![wireframes](static/screenshots/wireframes3.png)
@@ -39,6 +54,7 @@ Taste of Africa is a restaurant website designed based to display the user their
  ![wireframes](static/screenshots/wireframes10.png)
 
  ## Database
+
  ![Database](static/screenshots/database1.png)
 
  #  Features
