@@ -18,12 +18,10 @@
                 {% csrf_token %}
                 {{ form|crispy }}
 
-                <button type="submit" value="post" class="btn btn-warning mb-4">
+                <button type="submit" value="post" class="btn btn-outline-success mb-4">
                     Edit Reservation</button>
             </form>
         </div>
     </div>
 </div>
-
-
 {% endblock %}

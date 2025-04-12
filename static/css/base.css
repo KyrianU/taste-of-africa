@@ -3,13 +3,14 @@
 /* General Styling */
 
 body {
-    background-color: #FFFFFF;
+    background-color: #0000;
     font-family: 'Roboto', sans-serif;
 }
 
 /* Navbar element */
 
 nav {
+    background-image: linear-gradient(#f8b735 0%, #fbe5b6 80%);
     height: 100px;
     color: #561217;
 }
@@ -47,6 +48,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     color: #561217;
+    background-image: linear-gradient(#f8b735 0%, #fbe5b6 80%);
     bottom: 0;
  
 }

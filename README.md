@@ -123,6 +123,8 @@ The website gives a registered used the functionality to logout of the website
   * The user will receive a confirmation that they would like to log out 
   * The sign out button logs the user out directs back to the homepage 
 
+![Logout](static/screenshots/logout.png)
+
 ## Sign UP
 
 The website has the functionality for a user to register for an account.
@@ -241,7 +243,7 @@ In the deploy tab
 - Enter the Github repository then click search 
 - choose the appropriate repository for your application. Once done, click on "Connect"
 - You will then have two options(automatic or manual deployment), the automatic deployment will generate a new application everytime a change has been pushed to github, whereas the manual deployment requires the user to "Deploy Branch" button whenever the user wants to make a change.
-- Once the method of deployemnt has been selected, click on "Deploy Branch", your application shoould then be built. To then see it, click view
+- Once the method of deployemnt has been selected, click on "Deploy Branch", your application should then be built. To then see it, click view
 
 
 # Credits

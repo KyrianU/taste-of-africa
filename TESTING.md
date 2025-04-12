@@ -6,11 +6,11 @@ Please click the link ahead to return to readme file [README](README.md)
 
 ### As a user, I am able to nagivate through the website and view desired content with minimal issues
 
- - As a user, I am able to navigate through the website and view desired content with minimal issues
+ - As a user, I am able to navigate through the website and view desired content with minimal issues. Each feature has a navigation links which works perfectly, and these links can be found on the homepage
 
  ### As User, I want to be able to obtain key information of the restaurant from the landing page
 
-  - As a user, I am able to obtain key informatiion of the restaurant from the landing page
+  - As a user, I am able to obtain key informatiion of the restaurant from the landing page. The opening times are clearly displayed at the bottom of the page, on the footer. The social media links and address are also clearly displayed on the footer. It also clearly states how to book a reservation and also how to access the menu page.
 
 ### As the admin, I am able to login to the admin page so I can access the site's back end
 
@@ -23,23 +23,26 @@ Please click the link ahead to return to readme file [README](README.md)
  - ![Menu](static/screenshots/menu3.png)
 
 
- ### As a user, I want to be able to fill a booking form in order to make a reservation
+ ### As a user, I want to be able to fill a reservation form in order to make a reservation
 
-  - ![Reservation](static/screenshots/reservation.png)
+The reservation form consist of name field, number of seats, a date field and time slot.
+- ![Reservation](static/screenshots/reservation.png)
 
 ### As a user, I want to be able to register in order to log in and access my bookings 
 
-  - ![Signup](static/screenshots/signup1.png)
+Users are able to navigate to the register link up that is on the nav bar. Once they are at the sign up form, users will be prompted to input their usernames and password. Once done, users are then redirected to the homepage
+  - ![Signup](static/screenshots/signup.png)
 
 
 ### As a user, I want to be able to make amendments to my booking when I need/want to
 
- - ![Edit reservation](static/screenshots/Editreservation.png)
+Users are able to amend their booking via the manage resservation screen. The users can amend their time, date, seats and name on the booking.
+- ![Edit reservation](static/screenshots/editreservation.png)
 
 
  ### As a user, I want to be able to log in and cancel my booking when necessary
 
-  - ![Cancel reservation](static/screenshots/Cancelreservation.png)
+  - ![Cancel reservation](static/screenshots/cancel-reservation.png)
 
 ### As a user, I want to be aware of the opening time for when I want to make a reservations 
 
@@ -51,7 +54,8 @@ Please click the link ahead to return to readme file [README](README.md)
 
 ### As a user, I want to be able to log in and see all my reservations
 
- - ![Reservation](static/screenshots/my-reservation.png)
+Users can access their reservations via the manage reservation screen.
+- ![Reservation](static/screenshots/my-reservation.png)
 
 
 ### As the site owner, I want to be able to access the admin panel and be able to update the menu list
@@ -61,7 +65,7 @@ Please click the link ahead to return to readme file [README](README.md)
 - ![Add menu](static/screenshots/add-menu.png)
 
 
-# Broweser Responsivness 
+# Browser Responsivness 
 
 - Safari 
 ![Safari](static/screenshots/Screenshot%202024-11-29%20at%2011.13.17.png)
@@ -116,3 +120,5 @@ Please click the link ahead to return to readme file [README](README.md)
 
 - Seats option allows the user to pick a number that is less than zero
 - Users are also able to book duplicate reservation for the same date and time
+- Users are able to book a reservation without a date 
+- Users are able to book a reservation with an infinate amount of seats
