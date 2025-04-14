@@ -115,7 +115,7 @@ Users can access their reservations via the manage reservation screen.
 
 - Users were able to view and edit reservation made by other users
 - Fixed an issue that allowed to book a reservation for a past date
-- Fixed issue that was allowing user to make a reservation for more than 6 people 
+- Fixed issue that was allowing user to make a reservation for more than 6 people
 
 ## Unfixed bugs
 

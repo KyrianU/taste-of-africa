@@ -93,7 +93,7 @@ Taste of Africa is a restaurant that aims to satisfy new and existing customers 
   * The business address, phone number and email address are dipayed on the footer
   * The opening time are also displayed on the footer
 
- ![Footer](static/screenshots/footer1.png)
+ ![Footer](static/screenshots/footer.png)
 
  ## Navbar 
 
@@ -113,7 +113,7 @@ When the user clicks Sign in, they are then redirected to the home page.
 
 A successful login message will then show up on the navbar.
 
-![Login](static/screenshots/login1.png)
+![Login](static/screenshots/login.png)
 
 ## Logout
 
@@ -142,7 +142,7 @@ The website has the functionality for a user to register for an account.
 
 The form is submitted via the Signup button at the bottom of the form. When the user click on the SignUp button they are redirected to the home page. On the navbar, you will see logout replacing login and sign up links
 
-![Signup](static/screenshots/signup1.png)
+![Signup](static/screenshots/signup.png)
 
 ## Request Reservation
 
@@ -157,7 +157,7 @@ The website give functionality to the user to book/reserve a table via the make 
 - If the information passes the validation, the submit button directs the user back to the manage reservation page, where the user can view their existing bookings.
 - Each bookings will have the corresponding edit/cancel reservation button for the user to manipulate their bookings.
 
-![Reservation](static/screenshots/request-res.png)
+![Reservation](static/screenshots/reservation.png)
 
 ## My reservation
 
@@ -174,7 +174,7 @@ The site gives the user the functionality to keep track of their bookings via th
 
 -  The information on the reservation page can change subject to the customer chooisng to either update the booking or cancelling the booking entirely.
 
-![My reservations](static/screenshots/my-reservation.png) 
+![My reservations](static/screenshots/myreservations.png) 
 
 ## Admin Panel 
 
