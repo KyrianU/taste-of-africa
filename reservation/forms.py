@@ -16,28 +16,16 @@ class ReservationForm(forms.ModelForm):
                        'placeholder': 'Select a date',
                        'type': 'date'}
             ),
+            'seats': forms.NumberInput(
+                attrs={'min': 1, 'max': 6}
+            )
         }
 
-
-class EditReservations(forms.ModelForm):
-
-    # compare user input agaisnt current date ans throws an error
-    # if data happens to be in the past
-
     def clean_date(self):
-        date = self.cleaned_data('date')
-        if date < datetime.date.now():
+        date = self.cleaned_data.get('date')
+        if date < datetime.date.today():
             raise ValidationError('the date cannot be in the past')
+        if date.weekday() == 6:  # Sunday is 6
+            raise ValidationError('Sorry we are close on Sundays '
+                                  'Please choose another day')
         return date
-
-        class Meta:
-            model = Reservation
-            fields = ('name', 'seats', 'date', 'time')
-            widgets = {
-                'date': forms.DateInput(
-                    format=('%Y-%m-%d'),
-                    attrs={'class': 'form-control',
-                           'placeholder': 'Select a date',
-                           'type': 'date'}
-                ),
-            }

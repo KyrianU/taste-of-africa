@@ -115,10 +115,10 @@ Users can access their reservations via the manage reservation screen.
 
 - Users were able to view and edit reservation made by other users
 - Fixed an issue that allowed to book a reservation for a past date
+- Fixed issue that was allowing user to make a reservation for more than 6 people 
 
 ## Unfixed bugs
 
 - Seats option allows the user to pick a number that is less than zero
 - Users are also able to book duplicate reservation for the same date and time
-- Users are able to book a reservation without a date 
-- Users are able to book a reservation with an infinate amount of seats
+- Users are able to book a reservation without a date
