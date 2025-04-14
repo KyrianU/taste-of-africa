@@ -27,10 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ouc+50+q)offejp)n#arodbr-l)*%a2mxkd^9odto_ct&5@2e8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net', 'localhost',
-                'taste-of-africa-e622c7aa7e3a.herokuapp.com', '127.0.0.1']
+                 'taste-of-africa-e622c7aa7e3a.herokuapp.com', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-kyrianu-tasteofafrica-uxgc193ybny.ws.codeinstitute-ide.net']
 
