@@ -16,6 +16,10 @@ The MOSCOW METHOD OF PRIORITISATION was also used, classfifying each User Story 
 
 Overall, the use of Agile methodology was of great benefits as it helped with organising the development of the project. Even though there was not timeframe set for each User Story, it helped with my time management.
 
+![Agile methodologies](static/screenshots/kaban.png)
+![Agile methodologies](static/screenshots/kaban2.png)
+![Agile methodologies](static/screenshots/kaban3.png)
+
 # User Experience (UX)
 
 ## Site Goals
@@ -222,7 +226,7 @@ In order to make my project work, I have used several technologies along the way
 
 ### Heroku
 
-The website was deployed using ![Heroku](https://id.heroku.com/login)
+The website was deployed using [Heroku](https://id.heroku.com/login)
 
 the steps for the deployment are listed below:
 
