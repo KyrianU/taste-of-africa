@@ -115,8 +115,6 @@ The login page is styled in a constent manner with the rest of the website. The 
 
 When the user clicks Sign in, they are then redirected to the home page.
 
-A successful login message will then show up on the navbar.
-
 ![Login](static/screenshots/login.png)
 
 ## Logout
@@ -221,6 +219,7 @@ In order to make my project work, I have used several technologies along the way
 - [Cloudinary](https://cloudinary.com/)
   - To store images used on the project
 
+For testing write up please refer to [TESTING.MD](TESTING.md)
 
 ## Deployment 
 
@@ -249,6 +248,13 @@ In the deploy tab
 - You will then have two options(automatic or manual deployment), the automatic deployment will generate a new application everytime a change has been pushed to github, whereas the manual deployment requires the user to "Deploy Branch" button whenever the user wants to make a change.
 - Once the method of deployemnt has been selected, click on "Deploy Branch", your application should then be built. To then see it, click view
 
+#### Final Deployment
+
+1. When the development is complete, if you had left `Debug = True` in settings.py file, it is very important to change to `Debug = False`
+2. Commit and push your codes to your project repository
+3. Once that is done, open up Heroku, navigate to your project's app. Click on the settings tab, open up the config vars and delete the DISABLE_COLLECTSTATIC variable.
+4. Navigate to 'Deploy' tab and scroll all the way down to 'Deploy a Github Branch'
+5. Please select the branch you want to deploy and then click on the Deploy Branch button. When the app has been deployed, you should be able to see a successfull message in the built log saying 'Your app was successfully deployed'. To view the app on the browser, click 'View', or you can you click on 'Open App' button at the top of the page.
 
 # Credits
 
