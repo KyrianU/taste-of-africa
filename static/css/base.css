@@ -2,12 +2,14 @@
 
 /* General Styling */
 
+
 body {
     min-height: 100vh;
     background-color: #0000;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 

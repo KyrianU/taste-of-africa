@@ -68,10 +68,10 @@ Users can access their reservations via the manage reservation screen.
 # Browser Responsivness 
 
 - Safari 
-![Safari](static/screenshots/Screenshot%202024-11-29%20at%2011.13.17.png)
+![Safari](static/screenshots/safari.png)
 
 - Chrome
-![Chrome](static/screenshots/Chrome.png)
+![Chrome](static/screenshots/chrome.png)
 
 # Code Validation 
 
