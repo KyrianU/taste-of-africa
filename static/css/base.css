@@ -3,9 +3,13 @@
 /* General Styling */
 
 body {
+    min-height: 100vh;
     background-color: #0000;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Navbar element */
 
@@ -43,8 +47,8 @@ p > text-center mb-3 {
 /* footer element */
 
 footer {
-    margin-top: 2%;
-    padding-top: 2em;
+    margin-top: auto;
+    padding-top: 3em;
     display: flex;
     flex-flow: row wrap;
     color: #561217;
@@ -72,6 +76,10 @@ footer {
         height: 250px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .collapse.navbar-collapse.justify-content-center {
+        background-color: #fafafa;
     }
 }
 
