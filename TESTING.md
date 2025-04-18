@@ -99,7 +99,7 @@ Users can access their reservations via the manage reservation screen.
 
 - Reservation forms.py
 
-![reservation forms](static/screenshots/reservation-forms.png)
+![reservation forms](static/screenshots/reservation-form.png)
 
 - Reservation models.py 
 

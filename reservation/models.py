@@ -25,6 +25,9 @@ time_slots = (
 
 
 class Reservation(models.Model):
+    """
+    Model representing a reservation system in the restaurant.
+    """
 
     def validate_date(date):
         if date < datetime.date.today():
@@ -52,4 +55,4 @@ class Reservation(models.Model):
 
     def __str__(self):
         return str(self.id)
-                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                              

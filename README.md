@@ -8,7 +8,11 @@ Taste of Africa is a restaurant website designed based to display the user their
 
 # Agile Methodology
 
-The plan for this project was carried out using Agile Methodology. The Github issues which can be viewed here..., were also used to record the User stories used to help build the site.
+The plan for this project was carried out using Agile Methodology. The Github issues which can be viewed here:
+![Agile methodologies](static/screenshots/kaban.png)
+![Agile methodologies](static/screenshots/kaban2.png)
+![Agile methodologies](static/screenshots/kaban3.png)
+
 
 Every User story contains Acceptance Criteria and Tasks, some of these had to be amended as I was not too sure what needed to be done to achieve the Acceptance criteria.
 
@@ -16,9 +20,6 @@ The MOSCOW METHOD OF PRIORITISATION was also used, classfifying each User Story 
 
 Overall, the use of Agile methodology was of great benefits as it helped with organising the development of the project. Even though there was not timeframe set for each User Story, it helped with my time management.
 
-![Agile methodologies](static/screenshots/kaban.png)
-![Agile methodologies](static/screenshots/kaban2.png)
-![Agile methodologies](static/screenshots/kaban3.png)
 
 # User Experience (UX)
 
@@ -61,7 +62,7 @@ Taste of Africa is a restaurant that aims to satisfy new and existing customers 
 
  ![Database](static/screenshots/database1.png)
 
- #  Features
+ # Features
 
  ## Color Theme
 
@@ -154,7 +155,8 @@ The website give functionality to the user to book/reserve a table via the make 
 - A user cannot make a reservation without filling the form correctly
 - The user is requsted to input a name in the name field, if the user tries to book a table without a name in the name field, it will prompt the form to throw an error message
 - The seat feild only accepts numbers greater tha 0, negative numbers will not be accepted
-- The date field only accepts current and future dates 
+- The date field only accepts current and future dates
+- The date field will not allow users to book a reservation on a sunday as it's the only day in which it is closed.
 - The TimeField is a dropdown with the list of time slots available as per the restaurants opening time of the restaurants.
 - If the information passes the validation, the submit button directs the user back to the manage reservation page, where the user can view their existing bookings.
 - Each bookings will have the corresponding edit/cancel reservation button for the user to manipulate their bookings.
@@ -193,6 +195,9 @@ The site offers the restaurant owner the ability to view and interact with the d
 - Information about allergies
 - Food prices
 - Drinks menu
+- Forgot/Reset password functionality
+- Customer review section, customers can leave review on meals they've had, which could help with improvements
+- A small map of where the restaurant is.
 
 ## Technologies Used 
 
