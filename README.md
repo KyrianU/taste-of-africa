@@ -2,6 +2,8 @@
 
 ![Am I responsive](static/screenshots/amIresponsive.png)
 
+
+
 ## Introduction
 
 Taste of Africa is a restaurant website designed based to display the user their menu & enable the user to make/ammend/edit their reservations. This project is stritcly for educational purposes. With the use of Bootstrap and Django Framework, it gives users the functionality to register and account and reserve a table in advance. It includes full CRUD functionality on reservations.
