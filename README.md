@@ -2,7 +2,7 @@
 
 ![Am I responsive](static/screenshots/amIresponsive.png)
 
-
+[Link to the live website](https://taste-of-africa-e622c7aa7e3a.herokuapp.com/)
 
 ## Introduction
 
