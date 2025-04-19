@@ -13,8 +13,8 @@
     <div class="row row-text">
         <form method="POST">{% csrf_token %}
             <p>Are you sure you want to cancel? </p>
-                <button type="submit" class="btn btn-warning">Confirm</button>
-                <a href="{% url 'manage_reservations' %}" class="btn btn-danger">Cancel</a>
+                <button type="submit" class="btn btn-outline-success">Confirm</button>
+                <a href="{% url 'manage_reservations' %}" class="btn btn-outline-danger">Cancel</a>
         </form>
     </div>
 </div>

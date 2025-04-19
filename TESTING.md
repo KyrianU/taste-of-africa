@@ -43,6 +43,7 @@ Users are able to amend their booking via the manage resservation screen. The us
  ### As a user, I want to be able to log in and cancel my booking when necessary
 
   - ![Cancel reservation](static/screenshots/cancel-reservation.png)
+  As displayed above, when a user decides to cancel their booking, they will be presented with the above scree. The buttons will only go fully green or red when the user hovers their mouse over the butons for better customer experience.
 
 ### As a user, I want to be aware of the opening time for when I want to make a reservations 
 
