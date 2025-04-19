@@ -50,7 +50,7 @@ p > text-center mb-3 {
 
 footer {
     margin-top: auto;
-    padding-top: 3em;
+    padding: 3em;
     display: flex;
     flex-flow: row wrap;
     color: #561217;
