@@ -48,7 +48,7 @@ Users are able to amend their booking via the manage resservation screen. The us
 ### As a user, I want to be aware of the opening time for when I want to make a reservations 
 
  - On the footer, you can find the location of the restaurant as well as the opening time
-  ![Footer](static/screenshots/footer1.png)
+  ![Footer](static/screenshots/footer.png)
   
   - On the reservation page, at the bottom of the form there Is a time drop that allows the user to pick which time suits them best. The first time slot being 12.30pm to the last one being 21:30pm
   ![Time slot](static/screenshots/time-slot.png)
