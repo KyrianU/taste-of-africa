@@ -16,7 +16,46 @@
                 </form>
             </div>
         </div>
+        <!-- Modal for invalid Sundays -->
+        <div class="modal fade" id="sundayModal" tabindex="-1" aria-labelledby="sundayModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header bg-danger-subtle">
+                    <h5 class="modal-title" id="sundayModalLabel">Invalid Date</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-danger">
+                    Sorry, we are closed on Sunday. Please choose another day.
+                </div>
+                <div class="modal-footer bg-danger-subtle">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
+{% endblock %}
+
+{% block js %}
+<script>
+    const dateInput = document.getElementById("id_date");
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, "0");
+    const dd = String(today.getDate()).padStart(2, "0");
+    const todayStr = `${yyyy}-${mm}-${dd}`;
+    dateInput.setAttribute("min", todayStr);
+
+    dateInput.addEventListener("input", function () {
+        const picked = new Date(this.value);
+        if (picked.getDay() === 0) { // Sunday = 0
+            this.value = ""; // clear the invalid date
+            // show Bootstrap modal
+            const modal = new bootstrap.Modal(document.getElementById('sundayModal'));
+            modal.show();
+        }
+    });
+</script>
 {% endblock %}

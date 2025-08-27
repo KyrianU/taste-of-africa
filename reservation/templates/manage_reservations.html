@@ -12,10 +12,24 @@
 
     <div class="row d-flex justify-content-center mb-5">
         <div class="col-sm-12">
-            <div class="row d-flex justify-content-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 d-flex justify-content-center">
                 {% for reservation in object_list %}
-                <div class="col-md-6 col-lg-4">
-                    <ul class="reservation-list text-center" id="{{ reservation.booking_id }}">
+                <div class="col">
+                    <div class="card h-100 shadow text-center">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Reservation ID:</strong> {{ reservation.id }}</h5>
+                            <p class="card-text">
+                                <strong>Table Seats:</strong> {{ reservation.seats }}<br>
+                                <strong>Date:</strong> {{ reservation.date }}</br>
+                                <strong>Time:</strong> {{ reservation.time }}<br>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-evenly">
+                            <a href="{% url 'edit_reservation' reservation.id %}" class="btn btn-success">Edit Reservations</a>
+                            <a href="{% url 'delete_reservation' reservation.id %}" class="btn btn-danger">Cancel Reservations</a>
+                        </div>
+                    </div>
+                    <!-- <ul class="reservation-list text-center" id="{{ reservation.booking_id }}">
                         <li class="reservation-item">
                             <h4>Reservation ID: {{ reservation.id }}</h4>
 
@@ -32,9 +46,12 @@
                             <a href="{% url 'delete_reservation' reservation.id %}"
                                 class="btn btn-danger">Cancel Reservations</a>
                         </div>
-                    </ul>
+                    </ul> -->
                 </div>
-
+                {% empty %}
+                    <div class="col-12 col-md-6 col-lg-4 mx-auto text-center">
+                        <h4 class="text-danger">No Reservations Found</h4>
+                    </div>
                 {% endfor %}
             </div>
         </div>

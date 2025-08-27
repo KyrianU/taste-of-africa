@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-    <!--<script src="https://kit.fontawesome.com/2d05664855.js" crossorigin="anonymous"></script> -->
-    <script src="https://kit.fontawesome.com/1a648d69e9.js" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -55,6 +49,17 @@
               </div>
             </div>
           </nav>
+
+    {% if messages %}
+      <section id="alerts">
+          {% for msg in messages %}
+              <!-- all django message tags mirror bootstrap, except error/danger -->
+              <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+                  <h3>{{ msg }}</h3>
+              </aside>
+          {% endfor %}
+      </section>
+    {% endif %}
   
     {% block content %} 
     {% endblock %}
@@ -64,12 +69,15 @@
                 <div class="col-md-4">
                   <div class="footer-container text-center text-md-left">
                     <h3 class="footer-subtitle">Socials</h3>
-                    <a class="btn btn-outline-dark btn-floating m-1" href="https//www.instagram.com/" role="button" target="_blank"
-                        ><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-dark btn-floating m-1" href="https//www.facebook.com/" role="button" target="_blank"
-                        ><i class="fab fa-facebook"></i></a>
-                    <a class="btn btn-outline-dark btn-floating m-1" href="https//www.tiktok.com/" role="button" target="_blank"
-                        ><i class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/" role="button" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="https://www.tiktok.com/" role="button" target="_blank">
+                      <i class="fab fa-tiktok"></i>
+                    </a>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -104,8 +112,11 @@
     </footer>
 
 
+    <script src="https://kit.fontawesome.com/1a648d69e9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    {% block js %}
+    {% endblock %}
     
 </body>
 </html>

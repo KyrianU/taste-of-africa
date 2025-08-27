@@ -281,18 +281,18 @@ throughout the whole process of building this website, I have used a number of d
   - [Unsplash](https://unsplash.com/)
 
 - Query set to filter through the reservation view 
-  - (https://docs.djangoproject.com/en/5.1/topics/class-based-views/generic-display/#viewing-subsets-of-objects)
+  - [Django Project](https://docs.djangoproject.com/en/5.1/topics/class-based-views/generic-display/#viewing-subsets-of-objects)
 
 - Reservation model was inspired by the link below 
-  - (https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+  - [Django Tutorials](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
 
 - For my reservation model, form & views, I used the below stackoverflow links to help overcome any issues 
-  - (https://stackoverflow.com/questions/61076688/django-form-dateinput-with-widget-in-update-loosing-the-initial-value)
-  - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
-  - (https://stackoverflow.com/questions/50439356/django-date-validation-help-needed)
-  - (https://stackoverflow.com/questions/48872380/display-multiple-queryset-in-list-view)
+  - [Stackverflow](https://stackoverflow.com/questions/61076688/django-form-dateinput-with-widget-in-update-loosing-the-initial-value)
+  - [Stackoverflow](https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
+  - [Stackoverflow](https://stackoverflow.com/questions/50439356/django-date-validation-help-needed)
+  - [Stackoverflow](https://stackoverflow.com/questions/48872380/display-multiple-queryset-in-list-view)
 
 - The crispy form template was downaloded with the help of the link below 
-  - (https://stackoverflow.com/questions/75706202/attributeerror-settings-object-has-no-attribute-crispy-template-pack)
+  - [Stackoverflow](https://stackoverflow.com/questions/75706202/attributeerror-settings-object-has-no-attribute-crispy-template-pack)
 
 
