@@ -29,24 +29,6 @@
                             <a href="{% url 'delete_reservation' reservation.id %}" class="btn btn-danger">Cancel Reservations</a>
                         </div>
                     </div>
-                    <!-- <ul class="reservation-list text-center" id="{{ reservation.booking_id }}">
-                        <li class="reservation-item">
-                            <h4>Reservation ID: {{ reservation.id }}</h4>
-
-                            <li class="reservation-item">Table Seats: {{ reservation.seats }} </li>
-                            <li class="reservation-item">Time: {{ reservation.time }}</li>
-                            <li class="reservation-item">Date: <span class="reservation-date"
-                                id="{{ reservation.date_booked }}">{{ reservation.date }}</span>
-                            </li>
-                        </li>
-
-                        <div class="text-center">
-                            <a href="{% url 'edit_reservation' reservation.id %}"
-                                class="btn btn-success">Edit Reservations</a>
-                            <a href="{% url 'delete_reservation' reservation.id %}"
-                                class="btn btn-danger">Cancel Reservations</a>
-                        </div>
-                    </ul> -->
                 </div>
                 {% empty %}
                     <div class="col-12 col-md-6 col-lg-4 mx-auto text-center">

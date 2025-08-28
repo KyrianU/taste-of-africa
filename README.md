@@ -180,7 +180,7 @@ The site gives the user the functionality to keep track of their bookings via th
 
 -  The information on the reservation page can change subject to the customer chooisng to either update the booking or cancelling the booking entirely.
 
-![My reservations](static/screenshots/myreservations.png) 
+![My reservations](static/screenshots/myreservation.png) 
 
 ## Admin Panel 
 
@@ -279,6 +279,7 @@ throughout the whole process of building this website, I have used a number of d
 - Unsplash & pexels for the images used across the site 
   - [Pexels](https://www.pexels.com/)
   - [Unsplash](https://unsplash.com/)
+  - [Pixabay](https://pixabay.com/)
 
 - Query set to filter through the reservation view 
   - [Django Project](https://docs.djangoproject.com/en/5.1/topics/class-based-views/generic-display/#viewing-subsets-of-objects)
